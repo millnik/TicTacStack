@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://images/red_ball.png" type="Texture" id=1]
+[ext_resource path="res://scripts/Ball.gd" type="Script" id=2]
+
+[node name="Redball" type="Control"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 40.0
+margin/bottom = 40.0
+
+[node name="RedBall" type="Sprite" parent="."]
+
+transform/pos = Vector2( 18.0596, 20.3661 )
+texture = ExtResource( 1 )
+script/script = ExtResource( 2 )
+
+

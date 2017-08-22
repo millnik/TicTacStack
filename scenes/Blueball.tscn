@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://images/blue_ball.png" type="Texture" id=1]
+[ext_resource path="res://scripts/Ball.gd" type="Script" id=2]
+
+[node name="Blueball" type="Control"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 50.0
+margin/bottom = 45.0
+
+[node name="blueball" type="Sprite" parent="."]
+
+transform/pos = Vector2( 24.0596, 20.3661 )
+texture = ExtResource( 1 )
+script/script = ExtResource( 2 )
+
+
