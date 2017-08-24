@@ -29,9 +29,14 @@ func _input(ev):
             else:
                 spriterect=Rect2(gpos.x, gpos.y, tsize.x, tsize.y)
             if spriterect.has_point(evpos):
-                status = "clicked"
-                offset = gpos-evpos
-                home = gpos
+                if global.getPlayer() == global.player1 and evpos.x < 120:
+                    status = "clicked"
+                    offset = gpos-evpos
+                    home = gpos
+                elif global.getPlayer() == global.player2 and evpos.x > 870:
+                    status = "clicked"
+                    offset = gpos-evpos
+                    home = gpos
         # Ball has been selected
         if status=="clicked" and ev.type == InputEvent.MOUSE_MOTION:
             status="dragging"

@@ -12,6 +12,7 @@ func _ready():
 	pass
 
 func setPlayer():
+	global.player = null
 	global.player1 = player1
 	global.player2 = player2
 	global.changePlayer()
